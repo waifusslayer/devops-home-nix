@@ -18,7 +18,7 @@
     system = "x86_64-linux";   # ← поменяй, если у тебя aarch64-linux (ARM), x86_64-darwin (Intel Mac) или aarch64-darwin (Apple Silicon)
   in {
     homeConfigurations.root = home-manager.lib.homeManagerConfiguration {
-      pkgs = nixpkgs.legacyPackages.${system};   # ← вот так правильно
+      pkgs = nixpkgs.legacyPackages.${system};   
 
       extraSpecialArgs = { inherit inputs; };
 
