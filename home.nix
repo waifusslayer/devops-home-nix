@@ -10,6 +10,8 @@
     ./modules/cloud.nix
   ];
 
+  programs.home-manager.enable = true;
+
   home.username      = "root";
   home.homeDirectory = "/root";
 
